@@ -1,0 +1,10 @@
+"0","datafl='/deva/phy2data/merged_fdata_uploc_first.csv'"
+"0","rootpath = '/devb/py2testing/demo_test'"
+"0","mynoxensModel = BtEnsPDEModelPols(th_low=None, th_high=None, logno2max=5.5, lognoxmax=6.5, rootpath=rootpath)"
+"0","mynoxensModel.loadData(datafl)"
+"1","/deva/phy2data/merged_fdata_uploc_first.csv
+"
+"1","Initial data sample size: 86692
+data size: (86692, 115)
+fulldata: (86692, 115) ; semidata: (0, 115)
+"

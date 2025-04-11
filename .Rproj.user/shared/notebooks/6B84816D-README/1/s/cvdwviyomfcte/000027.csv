@@ -1,0 +1,3 @@
+"0",""
+"0","plot(jpinn_metrics$epoch,jpinn_metrics$test_r2_no2,col=""blue"",lwd=2,type=""l"","
+"0","      ylim=c(0,1.1),xlab=""Epoch"",ylab=expression(""Test R""^2),cex.lab = 1.5,cex.axis = 1.5)"

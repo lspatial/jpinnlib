@@ -1,0 +1,3 @@
+"0","par(mfrow=c(3,1),mar=c(4,4.5,1,1))"
+"0","plot(jpinn_metrics$epoch,jpinn_metrics$train_r2_no2,type=""l"",col=""black"",cex.axis = 1.5,"
+"0","     ylim=c(0,1),xlab=""Epoch"",ylab=expression(""Train R""^2),lwd=2, cex.lab = 1.5)"

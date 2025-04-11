@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="phy2env" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="phy2no2x" project-jdk-type="Python SDK" />
+</project>

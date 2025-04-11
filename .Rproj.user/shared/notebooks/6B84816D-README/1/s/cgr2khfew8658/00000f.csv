@@ -1,0 +1,8 @@
+"0","import numpy as np"
+"0","import os"
+"0","import shutil"
+"0","import tensorflow as tf"
+"0","os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'"
+"0","from data.phydatahelper import tcovs  "
+"0","from ensphymodel2train  import BtEnsPDEModelPols"
+"0",""

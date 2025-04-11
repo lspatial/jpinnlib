@@ -1,0 +1,20 @@
+"0","library(readr)"
+"0","rootpath='/devb/py2testing/demo_test'"
+"0","tfl=paste(rootpath,'/model_no2x_baseline/model/train_tmp.csv',sep='')"
+"0","baseline_metrics=read_csv(tfl) "
+"2","[1mRows: [22m[34m120[39m [1mColumns: [22m[34m9[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m─────────────────────────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[32mdbl[39m (9): loss, r2tensor, rmsetensor, val_loss, val_r2tensor, val_rmsetensor, epoch, ind_test_r2, ind_test_rmse"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","tfl=paste(rootpath,'/model_no2x_jpinn/model/train_tmp.csv',sep='')"
+"0","jpinn_metrics=read_csv(tfl) "
+"2","[1mRows: [22m[34m120[39m [1mColumns: [22m[34m19[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m─────────────────────────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[32mdbl[39m (19): epoch, train_r2_no2, train_rmse_no2, train_cor_no2, test_r2_no2, test_rmse_no2, test_cor_no2, indtest_r..."
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
