@@ -58,13 +58,14 @@ out-of-distribution data and real-world applications:
 We have evaluated the approach in two typical applications of different
 air pollutants and different regions.
 
-- For reactive NO and NO in California, our approach achieved
-  unprecedented accuracy (R$^2$: 0.95-0.96; RMSE: 1.57-3.95 ppb) in
-  site-based independent testing (ensemble predictions), substantially
-  outperforming conventional deep learning methods in control tests
-  (R$^2$: 0.53-0.75) and surpassing recent studies conducted in
-  California or its subregions using standard cross-validation
-  procedures (R$^2$: 0.76-0.91).
+- For reactive NO<sub>2</sub> and NO<sub>x</sub> in
+  California<sup>2</sup>, our approach achieved unprecedented accuracy
+  (R$^2$: 0.95-0.96; RMSE: 1.57-3.95 ppb) in site-based independent
+  testing (ensemble predictions), substantially outperforming
+  conventional deep learning methods in control tests (R$^2$: 0.53-0.75)
+  and surpassing recent studies conducted in California or its
+  subregions using standard cross-validation procedures (R$^2$:
+  0.76-0.91).
 
 - For inert PM$_{2.5}$ and PM$_{10}$ across mainland China, our
   framework achieved exceptional accuracy (R$^2$: 0.87-0.88; RMSE: 12.91
