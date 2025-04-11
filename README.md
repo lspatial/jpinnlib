@@ -32,7 +32,8 @@ of vertical measurement data.
   concentration boundaries for different pollutants.
 
 - ***Pollutant relationship constraints*** Maintains known relationships
-  between paired pollutants (e.g., $NO_2 \leq NO_x$).
+  between paired pollutants (e.g., NO<sub>2</sub> $\leq$
+  NO<sub>x</sub>).
 
 - ***Observational accuracy***: Minimizes RMSE between predictions and
   labeled samples.
@@ -58,21 +59,21 @@ out-of-distribution data and real-world applications:
 We have evaluated the approach in two typical applications of different
 air pollutants and different regions.
 
-- For reactive NO<sub>2</sub> and NO<sub>x</sub> in
-  California<sup>2</sup>, our approach achieved unprecedented accuracy
-  (R$^2$: 0.95-0.96; RMSE: 1.57-3.95 ppb) in site-based independent
-  testing (ensemble predictions), substantially outperforming
-  conventional deep learning methods in control tests (R$^2$: 0.53-0.75)
-  and surpassing recent studies conducted in California or its
-  subregions using standard cross-validation procedures (R$^2$:
-  0.76-0.91).
+- For reactive NO<sub>2</sub> and NO<sub>x</sub> in California, our
+  approach achieved unprecedented accuracy (R<sup>2</sup>: 0.95-0.96;
+  RMSE: 1.57-3.95 ppb) in site-based independent testing (ensemble
+  predictions), substantially outperforming conventional deep learning
+  methods in control tests (R<sup>2</sup>: 0.53-0.75) and surpassing
+  recent studies conducted in California or its subregions using
+  standard cross-validation procedures (R<sup>2</sup>: 0.76-0.91).
 
-- For inert PM$_{2.5}$ and PM$_{10}$ across mainland China, our
-  framework achieved exceptional accuracy (R$^2$: 0.87-0.88; RMSE: 12.91
-  $\mu g/m^3$ for PM$_{2.5}$ and 21.03 $\mu g/m^3$ for PM$_{10}$) in
-  site-based independent testing, significantly outperforming both
-  conventional deep learning approaches in control tests and recent
-  studies utilizing cross-validation (R$^2$: 0.78-0.84).
+- For inert PM<sub>2.5</sub> and PM<sub>10</sub> across mainland China,
+  our framework achieved exceptional accuracy (R<sup>2</sup>: 0.87-0.88;
+  RMSE: 12.91 µg/m<sup>3</sup> for PM<sup>2.5</sup> and 21.03
+  µg/m<sup>3</sup> for PM<sub>10</sub>) in site-based independent
+  testing, significantly outperforming both conventional deep learning
+  approaches in control tests and recent studies utilizing
+  cross-validation (R<sup>2</sup>: 0.78-0.84).
 
 - Simulation of proxy advection and diffusion fields: Our method’s
   simultaneous generation of simulated proxy fields for advection and
@@ -96,10 +97,11 @@ The jPINN Library includes the following main modules:
 
   The core class for the encoding jPINN model that consists of two full
   residual deep networks, one for the main model to predict the dual
-  target variables (e.g., NO$_2$ and NO$_x$; PM$_{2.5}$ and PM$_{10}$),
-  and the other one for the parameters of inverse the proxy advection
-  velocities, proxy diffusion coefficients and deposition etc. The model
-  also provided the training function.
+  target variables (e.g., NO<sub>2</sub> and NO<sub>x</sub>;
+  PM<sub>2.5</sub> and PM<sub>10</sub>), and the other one for the
+  parameters of inverse the proxy advection velocities, proxy diffusion
+  coefficients and deposition etc. The model also provided the training
+  function.
 
 - Baseline FRNN implementation: model/baselinemodel.py
 
@@ -159,12 +161,12 @@ Environment requirements:
 
 Here we provide the [demo
 data](https://github.com/lspatial/jpinn_dataset). The data is based on
-our paper’s example of NO$_2$ and NO$_x$ but these data are mainly from
-the Air Quality System (AQS) monitoring stations of the US EPA where the
-data are publically accessible. The field data from the unversities are
-removed from the data due to data security protocol. We will provide the
-example code to show how to run the program and finally show the final
-results.
+our paper’s example of NO<sub>2</sub> and NO<sub>x</sub> but these data
+are mainly from the Air Quality System (AQS) monitoring stations of the
+US EPA where the data are publically accessible. The field data from the
+unversities are removed from the data due to data security protocol. We
+will provide the example code to show how to run the program and finally
+show the final results.
 
 - Step 1: Load the conda environment:
 
@@ -316,14 +318,14 @@ legend(40,1.1,lty=c(1,3),col=c("red","red"),bty="n",cex = 1.5, x.intersp = 1,
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- --> As
-demonstrated by the training curves, our jPINN model exhibits a
-consistent improvement in independent test R$^2$ values as training
-progresses. This stability in performance metrics contrasts
-significantly with the baseline model, which shows erratic fluctuations
-in both test and independent test R$^2$ values with limited overall
-improvement. The physics-informed architecture ultimately delivers
-approximately 10% higher R² values compared to the baseline FRNN in this
-comparative evaluation of a single model.
+demonstrated by the training curves for NO<sub>2</sub>, our jPINN model
+exhibits a consistent improvement in independent test R<sup>2</sup>
+values as training progresses. This stability in performance metrics
+contrasts significantly with the baseline model, which shows erratic
+fluctuations in both test and independent test R$^2$ values with limited
+overall improvement. The physics-informed architecture ultimately
+delivers approximately 10% higher R² values compared to the baseline
+FRNN in this comparative evaluation of a single model.
 
 Next, the results for RMSE are presented:
 
@@ -352,12 +354,12 @@ legend(20,25,lty=c(1,3),col=c("red","red"),bty="n",cex = 1.5, x.intersp = 1,
 
 ![](README_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
-Correspondingly, our jPINN’s independent test RMSE shows a stable
-decrease as training epochs increase. This differs significantly from
-the baseline model’s test and independent test RMSE, which displays
-unstable fluctuations with substantial deviations. Quantitatively, the
-jPINN’s independent test RMSE is approximately 0.85 ppb lower than that
-of the baseline FRNN in this testing scenario.
+Correspondingly, our jPINN’s independent test RMSE for NO<sub>2</sub>
+shows a stable decrease as training epochs increase. This differs
+significantly from the baseline model’s test and independent test RMSE,
+which displays unstable fluctuations with substantial deviations.
+Quantitatively, the jPINN’s independent test RMSE is approximately 0.85
+ppb lower than that of the baseline FRNN in this testing scenario.
 
 The stable convergence pattern observed during independent testing
 suggests that incorporating physical constraints fundamentally improves
