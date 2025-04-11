@@ -252,7 +252,7 @@ mynoxensModel.ensAModel('newid2', 'source', 'month_date',nepoch=120,
 ```
 
 - Step 7: Baseline path and data preprocessing for a single air
-  pollutant (outtype: 0: NO2; 1: NOx; 2:both)
+  pollutant (outtype: 0: NO<sub>2</sub>; 1: NO<sub>x</sub>; 2:both)
 
 ``` python
 mflag = 'no2x_baseline'
@@ -294,7 +294,7 @@ To begin implementation, first read the training dataset:
     ## ℹ Use `spec()` to retrieve the full column specification for this data.
     ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 
-Next, the results for R$^2$ are presented:
+Next, the results for R<sup>2</sup> are presented:
 
 ``` r
 par(mfrow=c(3,1),mar=c(4,4.5,1,1))
@@ -322,10 +322,10 @@ demonstrated by the training curves for NO<sub>2</sub>, our jPINN model
 exhibits a consistent improvement in independent test R<sup>2</sup>
 values as training progresses. This stability in performance metrics
 contrasts significantly with the baseline model, which shows erratic
-fluctuations in both test and independent test R$^2$ values with limited
-overall improvement. The physics-informed architecture ultimately
-delivers approximately 10% higher R² values compared to the baseline
-FRNN in this comparative evaluation of a single model.
+fluctuations in both test and independent test R<sup>2</sup> values with
+limited overall improvement. The physics-informed architecture
+ultimately delivers approximately 10% higher R² values compared to the
+baseline FRNN in this comparative evaluation of a single model.
 
 Next, the results for RMSE are presented:
 
