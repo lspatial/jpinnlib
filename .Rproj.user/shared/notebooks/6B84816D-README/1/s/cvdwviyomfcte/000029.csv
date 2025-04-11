@@ -1,1 +1,0 @@
-"0","lines(baseline_metrics$epoch,baseline_metrics$val_r2tensor,col=""blue"",lty=3,lwd=2)"

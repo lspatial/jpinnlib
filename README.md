@@ -20,7 +20,7 @@ physical constraints:
 ```
 
 where $C$ is air pollutant concentration to be predicted, $\partial\ t$
-denotes the time derivative, $\partial\ C /\! \partial\ t$ denotes air
+denotes the time derivative, $\partial\ C /\ \partial\ t$ denotes air
 pollutant change in each grid cell or target location over time ($t$),
 $\nabla(VC)$ denotes advection, $V$ denotes velocity, $p$ denotes the
 coefficient for the diffusion term ($\nabla^2 C$), and $R$ denotes the
@@ -44,19 +44,21 @@ constraints.
 Theoretically, incorporating a large number of unsupervised samples
 helps reduce the upper bound of the generalization error, thus improving
 learning stability and generalization performance across
-out-of-distribution data and real-world applications: $$
+out-of-distribution data and real-world applications:
+
+``` math
 \begin{align*}
     \varepsilon_G \leq C_{pd} \left(\varepsilon_{d,T} + \varepsilon_{p,T} + C_{q,d}^{\frac{1}{2}} N_d^{-\frac{\alpha_d}{2}} + C_{q,p}^{\frac{1}{2}}N_{\text{int}}^{-\frac{\alpha_p}{2}} \right)
     \label{eq:prf_core_generalizationerror}
 \end{align*}
-$$
+```
 
 ## Experiments
 
 We have evaluated the approach in two typical applications of different
 air pollutants and different regions.
 
-- For reactive NO$_2$ and NO$_x$ in California, our approach achieved
+- For reactive NO and NO in California, our approach achieved
   unprecedented accuracy (R$^2$: 0.95-0.96; RMSE: 1.57-3.95 ppb) in
   site-based independent testing (ensemble predictions), substantially
   outperforming conventional deep learning methods in control tests

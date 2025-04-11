@@ -1,8 +1,0 @@
-"0","mflag = 'no2x_baseline'"
-"0","# Preprocess the data using the defined covariates"
-"0","mynoxensModel.preprocessing(tcovs,outtype=0)"
-"1","tcovs used for training: ['iweek', 'lat', 'lon', 'ele30m', 'x2', 'y2', 'xy', 'int_d_300m_c1', 'int_d_300m_c2', 'int_d_300m_c3', 'int_d_300m_c4', 'int_d_5km_c1', 'int_d_5km_c2', 'int_d_5km_c3', 'int_d_5km_c4', 'NONFWY_Light_AADT_50res_5000neigh_emissions', 'NONFWY_Light_AADT_50res_300neigh_emissions', 'NONFWY_Heavy_AADT_50res_5000neigh_emissions', 'NONFWY_Heavy_AADT_50res_300neigh_emissions', 'FWY_Light_AADT_50res_5000neigh_emissions', 'FWY_Light_AADT_50res_300neigh_emissions', 'FWY_Heavy_AADT_50res_5000neigh_emissions', 'FWY_Heavy_AADT_50res_300neigh_emissions', 'airport_distance', 'airport_highdistance', 'impervious', 'impervious_15km', 'rmax', 'rmin', 'sph', 'srad', 'tmmn', 'tmmx', 'vs', 'BCMASS_BOT', 'CO_BOT', 'DD_O3_BOT', 'GMITO3', 'NIMASS25_BOT', 'NO_BOT', 'NO2_BOT', 'O3_BOT', 'PL_BOT', 'PS', 'SSMASS25_BOT', 'NDVI1km', 'NDVI15km', 'ozone24mean', 'Population_300m', 'ele30m', 'poirest', 'poifast', 'no2_pv1', 'no2_pv2', 'nox_pv1', 'nox_pv2', 'U2M', 'V2M', 'U10M', 'V10M', 'U50M', 'V50M', 'PBLH', 'stagnation', 'mixing', 'day_y', 'month', 'year', 'day_y_sine', 'day_y_cos', 'r50nlcd_22_1km_log', 'r50nlcd_23_1km_log', 'r50nlcd_24_1km_log', 'r50nlcd_21_1km_log', 'r50nlcd_31_1km_log', 'r50nlcd_22_15km_log', 'r50nlcd_23_15km_log', 'r50nlcd_24_15km_log', 'r50nlcd_21_15km_log', 'r50nlcd_31_15km_log']
-"
-"0","samplepath_baselin,savepath_baseline = modelingpath(rootpath,mflag)"
-"0",""
-"0",""
