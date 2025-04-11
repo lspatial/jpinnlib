@@ -13,17 +13,20 @@ physical constraints:
 
 <img src="figs/modelframe.png" style="width:90.0%;height:90.0%" />
 
-- ***PDE-based continuity formula*** Implements the equation: $$
+- ***PDE-based continuity formula*** Implements the equation:
+
+``` math
     \frac{\partial\ C}{\partial\ t} = -\nabla(VC) + p \nabla^2C+R 
-  $$ where $C$ is air pollutant concentration to be predicted,
-  $\partial\ t$ denotes the time derivative,
-  $\partial\ C /\! \partial\ t$ denotes air pollutant change in each
-  grid cell or target location over time ($t$), $\nabla(VC)$ denotes
-  advection, $V$ denotes velocity, $p$ denotes the coefficient for the
-  diffusion term ($\nabla^2 C$), and $R$ denotes the total change by
-  chemical transformation, emission and deposition. We just consider the
-  modeling close to ground, not 3-d space due to mssing of vertical
-  measurement data.
+```
+
+where $C$ is air pollutant concentration to be predicted, $\partial\ t$
+denotes the time derivative, $\partial\ C /\! \partial\ t$ denotes air
+pollutant change in each grid cell or target location over time ($t$),
+$\nabla(VC)$ denotes advection, $V$ denotes velocity, $p$ denotes the
+coefficient for the diffusion term ($\nabla^2 C$), and $R$ denotes the
+total change by chemical transformation, emission and deposition. We
+just consider the modeling close to ground, not 3-d space due to mssing
+of vertical measurement data.
 
 - ***Concentration thresholds*** Enforces realistic maximum
   concentration boundaries for different pollutants.
